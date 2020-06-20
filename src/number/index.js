@@ -22,3 +22,6 @@ export const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (ma
  * @example replacePhone(15555555555) // "155****5555"
  */
 export const replacePhone = cellValue => String(cellValue).replace(/^(\d{3})\d{4}(\d{4})$/, '$1****$2')
+
+// 解决浮点数的问题
+export * from './number-precision'
